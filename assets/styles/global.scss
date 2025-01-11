@@ -1,0 +1,16 @@
+html.light {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    // @import '~@primevue/themes/aura/theme.css';
+}
+
+html.dark {
+    --background-color: #181818;
+    --text-color: #ffffff;
+    // @import '~@primevue/themes/aura-dark/theme.css';
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
