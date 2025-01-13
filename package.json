@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/color-mode": "^3.5.1",
+    "@nuxt/ui": "^3.0.0-alpha.10",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"

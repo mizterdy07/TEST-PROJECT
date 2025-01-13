@@ -26,15 +26,10 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules:['@nuxtjs/color-mode','@nuxt/ui'],
+  modules:['@nuxt/ui','@nuxtjs/color-mode'],
   components: true,
-  css: ['~/assets/styles/tailwind.css','@/assets/styles/global.scss'],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
+  css: ['~/assets/styles/main.css','~/assets/styles/tailwind.css','@/assets/styles/global.scss'],
+
   colorMode: {
     preference: 'system', // Use system preference or 'light' / 'dark'
     fallback: 'light',    // Fallback to 'light' if system preference is not available

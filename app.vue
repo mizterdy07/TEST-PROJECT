@@ -1,13 +1,11 @@
 <template>
-  <!-- <NuxtRouteAnnouncer />
-  <NuxtWelcome /> -->
-  <UApp>
-    <NuxtLoadingIndicator />
-    <NuxtLayout>
+  <NuxtLoadingIndicator />
+  <NuxtLayout>
+    <UApp>
       <NuxtPage :transition="{
         name: 'page',
         mode: 'out-in',
       }" />
-    </NuxtLayout>
-  </UApp>
+    </UApp>
+  </NuxtLayout>
 </template>

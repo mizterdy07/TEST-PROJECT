@@ -53,5 +53,6 @@ const data = ref([
 </script>
 
 <template>
+  <UButton label="Create" />
   <UTable sticky :data="data" class="flex-1 max-h-[312px]" />
 </template>
