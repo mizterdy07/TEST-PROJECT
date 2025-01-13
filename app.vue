@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <!-- <NuxtRouteAnnouncer />
-    <NuxtWelcome /> -->
+  <!-- <NuxtRouteAnnouncer />
+  <NuxtWelcome /> -->
+  <UApp>
     <NuxtLoadingIndicator />
     <NuxtLayout>
       <NuxtPage :transition="{
@@ -9,5 +9,5 @@
         mode: 'out-in',
       }" />
     </NuxtLayout>
-  </div>
+  </UApp>
 </template>

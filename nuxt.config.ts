@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import Aura from '@primevue/themes/aura';
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
@@ -26,10 +26,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules:[
-    '@primevue/nuxt-module',
-    '@nuxtjs/color-mode'
-  ],
+  modules:['@nuxtjs/color-mode','@nuxt/ui'],
   components: true,
   css: ['~/assets/styles/tailwind.css','@/assets/styles/global.scss'],
   postcss: {
@@ -43,28 +40,5 @@ export default defineNuxtConfig({
     fallback: 'light',    // Fallback to 'light' if system preference is not available
     classSuffix: '',      // No suffix added to classes (use 'dark' or 'light' on <html>)
     storageKey: 'nuxt-color-mode' // Storage key for the user's color mode preference
-  },
-  primevue:{
-    usePrimeVue:true,
-    autoImport:true,
-    // options:{
-    //   ripple:true,
-    //   inputVariant:'filled',
-    //   theme:{
-    //     preset:Aura,
-    //     options:{
-    //       prefix: 'p',
-    //       darkModeSelector: 'system',
-    //       cssLayer: false
-    //     }
-    //   }
-    // }
-  },
-  build: {
-    transpile: ['primevue'],
-  },
-  // plugins:[
-  //   { src: '~/plugins/primevue-theme.ts', mode: 'client' }, // Register the theme plugin
-  // ]
-  
+  },  
 })
